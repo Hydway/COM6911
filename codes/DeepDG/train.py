@@ -32,7 +32,7 @@ def get_args():
                         default="linear", choices=["linear", "wn"])
     parser.add_argument('--data_file', type=str, default='',
                         help='root_dir')
-    parser.add_argument('--dataset', type=str, default='office')
+    parser.add_argument('--dataset', type=str, default='PACS')
     parser.add_argument('--data_dir', type=str, default='', help='data dir')
     parser.add_argument('--dis_hidden', type=int,
                         default=256, help='dis hidden dimension')

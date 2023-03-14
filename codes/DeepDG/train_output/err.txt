@@ -1,0 +1,176 @@
+Traceback (most recent call last):
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2022.3\plugins\python\helpers\pydev\pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2022.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2022.3\plugins\python\helpers\pydev\pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2022.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+Traceback (most recent call last):
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2022.3\plugins\python\helpers\pydev\pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2022.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+Traceback (most recent call last):
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+Traceback (most recent call last):
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+Traceback (most recent call last):
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+Traceback (most recent call last):
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'art_painting'
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2022.3\plugins\python\helpers\pydev\pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2022.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\train.py", line 107, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\getdataloader.py", line 19, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\hpcxy\Jupyter\COM6911\codes\DeepDG\datautil\imgdata\imgdataload.py", line 12, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 309, in __init__
+    super().__init__(
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 218, in find_classes
+    return find_classes(directory)
+  File "D:\ProgramData\Anaconda3\Lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'art_painting'
