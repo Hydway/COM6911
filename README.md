@@ -16,7 +16,7 @@ The dataset we are using `PACS` already exists on a shared disk and is downloade
 
 1. Using the school's computers to download.
 
-2. For your convenience, I have uploaded them to our Google Cloud Drive data directory.
+2. For your convenience, I have uploaded them to our [Google Cloud Drive](https://drive.google.com/drive/folders/1-E0XdVc9xot46zcPe0rwOklLQ6kMb1vI?usp=sharing).
 
 Remember the location of the downloaded data for subsequent use.
 
