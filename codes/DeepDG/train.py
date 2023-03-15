@@ -11,10 +11,10 @@ from alg import alg, modelopera
 from utils.util import set_random_seed, save_checkpoint, print_args, train_valid_target_eval_names, alg_loss_dict, Tee, img_param_init, print_environ
 from datautil.getdataloader import get_img_dataloader
 
-
 def get_args():
+    data_dir = os.path.abspath(os.path.dirname(os.getcwd())) + r'\data\PACS' + "\\"
     parser = argparse.ArgumentParser(description='DG')
-    parser.add_argument('--algorithm', type=str, default="ERM")
+    parser.add_argument('--algorithm', type=str, default="DIFEX")
     parser.add_argument('--alpha', type=float,
                         default=1, help='DANN dis alpha')
     parser.add_argument('--anneal_iters', type=int,
@@ -33,7 +33,7 @@ def get_args():
     parser.add_argument('--data_file', type=str, default='',
                         help='root_dir')
     parser.add_argument('--dataset', type=str, default='PACS')
-    parser.add_argument('--data_dir', type=str, default='', help='data dir')
+    parser.add_argument('--data_dir', type=str, default=data_dir, help='data dir')
     parser.add_argument('--dis_hidden', type=int,
                         default=256, help='dis hidden dimension')
     parser.add_argument('--disttype', type=str, default='2-norm',
@@ -89,7 +89,7 @@ def get_args():
     parser.add_argument('--weight_decay', type=float, default=5e-4)
     args = parser.parse_args()
     args.steps_per_epoch = 100
-    args.data_dir = args.data_file+args.data_dir
+    args.data_dir = args.data_file + args.data_dir
     os.environ['CUDA_VISIBLE_DEVICS'] = args.gpu_id
     os.makedirs(args.output, exist_ok=True)
     sys.stdout = Tee(os.path.join(args.output, 'out.txt'))
