@@ -4,25 +4,23 @@ The feasibility of the method was verified in this experiment.
 
 Note: Running on a private computer will consume a lot of resources and may lead to some unexpected situations.
 
-## Increase the virtual memory of the disk
+## （Windows）Increase the virtual memory of the disk
 
-First, determine which disk `python` is installed on in your current environment. If it is installed on a location other than the `C:/` drive, you need to increase the virtual memory on that disk, and change it in the following way:
+First, determine which disk `python` is installed on in your current environment. If it is installed on a location other than the `C:/` drive, you need to increase the virtual memory on that disk:
 
 `System Properties - Advanced - Performance - Settings - Advanced - Virtual Memory - Change`
 
 ## Download dataset
 
-The dataset we are using `PACS` already exists on a shared disk and is downloaded by:
+The dataset we are using `PACS` already exists on a shared disk, here are two different way to download them:
 
-1. Using the school's computers to download.
+1. Using the university's computers to download.
 
 2. For your convenience, I have uploaded them to our [Google Cloud Drive](https://drive.google.com/drive/folders/1-E0XdVc9xot46zcPe0rwOklLQ6kMb1vI?usp=sharing).
 
 Remember the location of the downloaded data for subsequent use.
 
 ## Code Environment
-
-
 
 This experiment is recommended to use the environment introduced by the original author: [jindongwang/docker - Docker Image | Docker Hub](https://hub.docker.com/r/jindongwang/docker)
 
@@ -41,7 +39,7 @@ Environment:
 
 ## Run the code
 
-In the original author's script (`script/run.sh`), 8 algorithms and multiple epochs were used to train this model. The purpose of this run is to verify the feasibility of the method, so into the first algorithm was selected for 1 epoch of training for the demonstration.
+> In the original author's script (`script/run.sh`), 8 algorithms and multiple epochs were used to train this model. The purpose of this run is to verify the feasibility of the method, so into the first algorithm was selected for 1 epoch of training for the demonstration.
 
 Go to the root directory (the directory where train.py is stored) in bash and run the following code:
 
