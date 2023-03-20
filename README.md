@@ -1,1 +1,3 @@
-# COM6911
+# COM6911-Yining
+
+[How to run the project on a personal computer](https://github.com/Hydway/COM6911/tree/Yining/Run on a personal computer)
