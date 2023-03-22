@@ -1,4 +1,4 @@
-# COM6911
+# How to run the project on a personal computer
 
 The feasibility of the method was verified in this experiment.
 
