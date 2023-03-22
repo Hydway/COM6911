@@ -4,7 +4,7 @@ We cannot run our compiled GPU code on the worked node as it has no GPUs or CUDA
 
 In addition, I optimized the bash script so that it can be more perfectly adapted to HPC, but the hyperparameters in bash need to be further optimized in future experiments.
 
-Here are the steps on 'how to run this project on HPC':
+Here are the steps about 'how to run this project on HPC':
 
 #### Create a virtual environment called `dgml`：
 
@@ -44,10 +44,11 @@ qsub -l gpu=1 -b y ./run.sh
 
 #### Appendix: my `run.sh` file
 
-This file is just an experiment, please use more algorithms and epochs to train the model in the future
+This file is just an experiment, please use more algorithms and epochs to train the model in the future.
 
 ```bash
 #!/bin/bash
+#$ -l gpu=1
 #$ -l h_rt=6:00:00  # time needed in hours:mins:secs
 #$ -pe smp 4 # number of cores requested
 #$ -l rmem=8G # size of memory requested
@@ -65,3 +66,4 @@ source activate dgml
 python ../train.py --data_dir ../Data/PACS/ --max_epoch 2 --net resnet18 --task img_dg --output ../output/ --test_envs 2 --dataset PACS --algorithm MLDG --mldg_beta 10
 ```
 
+.
