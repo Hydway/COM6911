@@ -33,7 +33,7 @@ pip install Numpy
 cd script
 
 # qsub run.sh
-qsub -l gpu=1 -b y ./run.sh
+qsub -l gpu=1 run.sh
 ```
 
 > Notice:
