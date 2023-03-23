@@ -65,5 +65,3 @@ source activate dgml
 
 python ../train.py --data_dir ../Data/PACS/ --max_epoch 2 --net resnet18 --task img_dg --output ../output/ --test_envs 2 --dataset PACS --algorithm MLDG --mldg_beta 10
 ```
-
-.
