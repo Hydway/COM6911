@@ -44,7 +44,7 @@ pip install Numpy
 
 `run.sh`: The MLDG algorithm is selected, only 1 epoch will be  trained, the training time is short, and it can be used as a test.
 
-`run_all.sh`: The DIFEX algorithm and 7 sets of hyperparameters are selected, and each set was trained for 120 epochs.
+`run_all.sh`: The DIFEX algorithm and 8 sets of hyperparameters are selected, and each set was trained for 120 epochs.
 
 ```bash
 cd script
