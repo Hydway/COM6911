@@ -4,14 +4,6 @@
 
 [Request access to Computer Science nodes in University of Sheffield HPC clusters (google.com)](https://docs.google.com/forms/d/e/1FAIpQLSfIT2mqAw3l3HAqTJ3HsThiaKT7HYb04MqyLST9vYARspRO6A/viewform)
 
-#### Use ssh to enter ShARC
-
-```
-ssh $USER@sharc.shef.ac.uk  # Use lowercase for your username, without `$`
-```
-
-After entering ShARC, **do not** need to use `qrshx` or other commands to enter a node, you can use the `qsub` command to directly submit the task to HPC, and HPC will assign it to the appropriate node automatically according to the resources you request.
-
 #### Put the PACS dataset in the root directory of the project
 
 ```
