@@ -1,0 +1,206 @@
+Environment:
+	Python: 3.9.1
+	PyTorch: 2.0.0+cu117
+	Torchvision: 0.15.1+cu117
+	CUDA: 11.7
+	CUDNN: 8500
+	NumPy: 1.24.2
+	PIL: 9.4.0
+/home/acs22yq/.conda/envs/dgml/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/acs22yq/.conda/envs/dgml/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+=======hyper-parameter used========
+==========================================
+algorithm:MLDG
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:PACS
+data_dir:../Data/PACS/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:2
+mixupalpha:0.2
+mldg_beta:10.0
+mmd_gamma:1
+momentum:0.9
+net:resnet18
+N_WORKERS:1
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[2]
+output:../output/
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['art_painting', 'cartoon', 'photo', 'sketch']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:7
+domain_num:4
+
+===========start training===========
+Environment:
+	Python: 3.9.1
+	PyTorch: 2.0.0+cu117
+	Torchvision: 0.15.1+cu117
+	CUDA: 11.7
+	CUDNN: 8500
+	NumPy: 1.24.2
+	PIL: 9.4.0
+/home/acs22yq/.conda/envs/dgml/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/acs22yq/.conda/envs/dgml/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+=======hyper-parameter used========
+==========================================
+algorithm:MLDG
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:PACS
+data_dir:../Data/PACS/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:2
+mixupalpha:0.2
+mldg_beta:10.0
+mmd_gamma:1
+momentum:0.9
+net:resnet18
+N_WORKERS:1
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[2]
+output:../output/
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['art_painting', 'cartoon', 'photo', 'sketch']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:7
+domain_num:4
+
+===========start training===========
+Environment:
+	Python: 3.9.1
+	PyTorch: 2.0.0+cu117
+	Torchvision: 0.15.1+cu117
+	CUDA: 11.7
+	CUDNN: 8500
+	NumPy: 1.24.2
+	PIL: 9.4.0
+/home/acs22yq/.conda/envs/dgml/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/acs22yq/.conda/envs/dgml/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+=======hyper-parameter used========
+==========================================
+algorithm:MLDG
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:PACS
+data_dir:../Data/PACS/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:2
+mixupalpha:0.2
+mldg_beta:10.0
+mmd_gamma:1
+momentum:0.9
+net:resnet18
+N_WORKERS:1
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[2]
+output:../output/
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['art_painting', 'cartoon', 'photo', 'sketch']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:7
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+total_loss:21.4107
+train_acc:0.1634,valid_acc:0.1601,target_acc:0.1060
+total cost time: 246.7194
+manually descrease lr
+===========epoch 1===========
+total_loss:20.5861
+train_acc:0.1481,valid_acc:0.1478,target_acc:0.1192
+total cost time: 452.3231
+valid acc: 0.1601
+DG result: 0.1060

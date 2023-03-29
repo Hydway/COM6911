@@ -1,10 +1,31 @@
 # How to run the project on HPC
 
-We cannot run our compiled GPU code on the worked node as it has no GPUs or CUDA driver. Instead we must submit the execution of the GPU accelerated CUDA program via the ShARC job submission system (`qsub`). 
+#### Apply for GPU usage permission
 
-In addition, I optimized the bash script so that it can be more perfectly adapted to HPC, but the hyperparameters in bash need to be further optimized in future experiments.
+[Request access to Computer Science nodes in University of Sheffield HPC clusters (google.com)](https://docs.google.com/forms/d/e/1FAIpQLSfIT2mqAw3l3HAqTJ3HsThiaKT7HYb04MqyLST9vYARspRO6A/viewform)
 
-Here are the steps about 'how to run this project on HPC':
+#### Use ssh to enter ShARC
+
+```
+ssh $USER@sharc.shef.ac.uk  # Use lowercase for your username, without `$`
+```
+
+After entering ShARC, **do not** need to use `qrshx` or other commands to enter a node, you can use the `qsub` command to directly submit the task to HPC, and HPC will assign it to the appropriate node automatically according to the resources you request.
+
+#### Put the PACS dataset in the root directory of the project
+
+```
+RootDir
+└───Data
+│   └───PACS
+│       └───art_painting
+│       	│   file1.jpg
+│       	│   file2.jpg
+│   		│   ...
+|    	└───cartoon   
+│   		│	file1.jpg
+│   		│	...
+```
 
 #### Create a virtual environment called `dgml`：
 
@@ -27,13 +48,17 @@ pip install Numpy
 ...
 ```
 
-#### Enter the `script` folder and submit `run.sh` to run on
+#### Enter the `script` folder and submit `run.sh` to HPC
+
+`run.sh`: The MLDG algorithm is selected, only 1 epoch will be  trained, the training time is short, and it can be used as a test.
+
+`run_all.sh`: The DIFEX algorithm and 7 sets of hyperparameters are selected, and each set was trained for 120 epochs.
 
 ```bash
 cd script
 
-# qsub run.sh
-qsub -l gpu=1 run.sh
+qsub run.sh
+# qsub run_all.sh
 ```
 
 > Notice:
@@ -42,26 +67,19 @@ qsub -l gpu=1 run.sh
 >
 > If your personal computer uses Windows system, then don't do this! The encoding format of the `.sh` script edited by the Windows system will be modified, so that it cannot run normally in the Linux system, so please edit `run.sh` directly in the Linux/Mac environment!
 
-#### Appendix: my `run.sh` file
-
-This file is just an experiment, please use more algorithms and epochs to train the model in the future.
+#### Appendix: Explanation of each parameter in the `.sh` file
 
 ```bash
 #!/bin/bash
-#$ -l gpu=1
+#$ -N GPU_test # name of the task
+#$ -l gpu=1 # apply for a GPU
+#$ -P rse # submit to the DGX-1
+#$ -q rse.q # submit to the DGX-1
 #$ -l h_rt=6:00:00  # time needed in hours:mins:secs
-#$ -pe smp 4 # number of cores requested
-#$ -l rmem=8G # size of memory requested
-#$ -o Output/out.txt  # This is where your output and errors are logged
+#$ -l rmem=18G # size of memory requested
+#$ -o ../output/run_with_gpu.txt  # This is where your output and errors are logged
 #$ -j y # normal and error outputs into a single file (the file above)
 #$ -M youremail@shef.ac.uk # notify you by email, remove this line if you don't want to be notified
 #$ -m ea # email you when it finished or aborted
 #$ -cwd # run job from current directory
-
-module load libs/CUDA
-module load apps/python/conda
-
-source activate dgml
-
-python ../train.py --data_dir ../Data/PACS/ --max_epoch 2 --net resnet18 --task img_dg --output ../output/ --test_envs 2 --dataset PACS --algorithm MLDG --mldg_beta 10
 ```
