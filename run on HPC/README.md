@@ -67,7 +67,6 @@ qsub run.sh
 #$ -l gpu=1 # apply for a GPU
 #$ -P rse # submit to the DGX-1
 #$ -q rse.q # submit to the DGX-1
-#$ -l h_rt=6:00:00  # time needed in hours:mins:secs
 #$ -l rmem=18G # size of memory requested
 #$ -o ../output/run_with_gpu.txt  # This is where your output and errors are logged
 #$ -j y # normal and error outputs into a single file (the file above)

@@ -3,7 +3,6 @@
 #$ -l gpu=1
 #$ -P rse
 #$ -q rse.q
-#$ -l h_rt=6:00:00  # time needed in hours:mins:secs
 #$ -l rmem=18G # size of memory requested
 #$ -o ../output/run_with_gpu.txt  # This is where your output and errors are logged
 #$ -j y # normal and error outputs into a single file (the file above)
