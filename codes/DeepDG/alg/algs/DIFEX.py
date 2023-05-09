@@ -44,6 +44,8 @@ class DIFEX(Algorithm):
             loss = F.cross_entropy(all_p, all_y, reduction='mean')
             opt1.zero_grad()
             loss.backward()
+            ######################################
+            # This step could be refactored using Taichi.
             if ((epoch+1) % (int(self.args.steps_per_epoch*self.args.max_epoch*0.7)) == 0 or (epoch+1) % (int(self.args.steps_per_epoch*self.args.max_epoch*0.9)) == 0) and (not self.args.schuse):
                 for param_group in opt1.param_groups:
                     param_group['lr'] = param_group['lr']*0.1
@@ -55,6 +57,8 @@ class DIFEX(Algorithm):
                 print('epoch: %d, cls loss: %.4f' % (epoch, loss))
         self.teaNet.eval()
 
+    ######################################
+    # This function could be refactored using Taichi.
     def coral(self, x, y):
         mean_x = x.mean(0, keepdim=True)
         mean_y = y.mean(0, keepdim=True)
@@ -68,6 +72,9 @@ class DIFEX(Algorithm):
 
         return mean_diff + cova_diff
 
+
+    ######################################
+    # This function could be refactored using Taichi.
     def update(self, minibatches, opt, sch):
         all_x = torch.cat([data[0].cuda().float() for data in minibatches])
         all_y = torch.cat([data[1].cuda().long() for data in minibatches])
@@ -92,6 +99,8 @@ class DIFEX(Algorithm):
             loss3 = torch.mean(F.cosine_similarity(
                 all_z[:, :self.tfbd], all_z[:, self.tfbd:]))*self.args.beta
         loss4 = 0
+        ######################################
+        # This step could be refactored using Taichi.
         if len(minibatches) > 1:
             for i in range(len(minibatches)-1):
                 for j in range(i+1, len(minibatches)):
